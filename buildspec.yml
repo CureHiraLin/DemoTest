@@ -12,8 +12,7 @@ phases:
       # Karate実行ファイルをダウンロード
       - echo Download karate.jar
       - mkdir -p lib
-      - dnf swap libcurl-minimal libcurl-full
-      - dnf swap curl-minimal curl-full
+      - apt-get install curl
       - curl -L -o ./lib/karate.jar https://github.com/karatelabs/karate/releases/download/v1.5.0/karate-1.5.0.jar
       # S3へのアップロードのために、AWS CLIをインストール
       - echo Install AWS CLI ...
