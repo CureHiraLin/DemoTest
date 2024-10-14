@@ -2,7 +2,7 @@ version: 0.2
 env:
   variables:
     # レポート配置用に作成したバケット名を指定
-    # REPORT_S3_BUCKET: karate-sample-bucket
+    REPORT_S3_BUCKET: karate-sample-bucket
 phases:
   pre_build:
     commands:
