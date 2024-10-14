@@ -14,7 +14,7 @@ phases:
       - mkdir -p lib
       - apt-get update
       - apt-get install -y curl
-      - curl -L -o ./lib/karate.jar https://github.com/karatelabs/karate/releases/download/v1.5.0/karate-1.5.0.jar
+      - curl -L -o ./lib/karate.jar https://github.com/karatelabs/karate/releases/download/v${KARATE_VERSION}/karate-${KARATE_VERSION}.jar
       # S3へのアップロードのために、AWS CLIをインストール
       - echo Install AWS CLI ...
       - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -30,4 +30,4 @@ phases:
     commands:
       # S3にレポートをアップロード
       - echo Uploading Karate results...
-      - aws s3 sync ./target/karate-reports s3://karate-sample-bucket/karate/karate-reports --no-progress --delete
+      - aws s3 sync ./target/karate-reports s3://${REPORT_S3_BUCKET}/karate/karate-reports --no-progress --delete
