@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="3.089" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/hiralin/DemoTest/target/test-classes:/Users/hiralin/DemoTest/target/classes:/Users/hiralin/.m2/repository/io/karatelabs/karate-junit5/1.5.0/karate-junit5-1.5.0.jar:/Users/hiralin/.m2/repository/io/karatelabs/karate-core/1.5.0/karate-core-1.5.0.jar:/Users/hiralin/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/hiralin/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/hiralin/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/hiralin/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/hiralin/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/hiralin/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/hiralin/.m2/repository/com/linecorp/armeria/armeria/1.29.2/armeria-1.29.2.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/hiralin/.m2/repository/io/micrometer/micrometer-core/1.13.0/micrometer-core-1.13.0.jar:/Users/hiralin/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/Users/hiralin/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/Users/hiralin/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.1/HdrHistogram-2.2.1.jar:/Users/hiralin/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport/4.1.110.Final/netty-transport-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-common/4.1.110.Final/netty-common-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-buffer/4.1.110.Final/netty-buffer-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver/4.1.110.Final/netty-resolver-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-haproxy/4.1.110.Final/netty-codec-haproxy-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec/4.1.110.Final/netty-codec-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-http2/4.1.110.Final/netty-codec-http2-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-handler/4.1.110.Final/netty-handler-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-http/4.1.110.Final/netty-codec-http-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver-dns/4.1.110.Final/netty-resolver-dns-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-dns/4.1.110.Final/netty-codec-dns-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar:/Users/hiralin/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/hiralin/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/hiralin/.m2/repository/io/netty/netty-handler-proxy/4.1.110.Final/netty-handler-proxy-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-socks/4.1.110.Final/netty-codec-socks-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.110.Final/netty-transport-classes-epoll-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.110.Final/netty-transport-classes-kqueue-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.110.Final/netty-resolver-dns-classes-macos-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-classes/2.0.65.Final/netty-tcnative-classes-2.0.65.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar:/Users/hiralin/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar:/Users/hiralin/.m2/repository/com/aayushatharva/brotli4j/service/1.16.0/service-1.16.0.jar:/Users/hiralin/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.16.0/native-osx-aarch64-1.16.0.jar:/Users/hiralin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/hiralin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/hiralin/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/hiralin/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/hiralin/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/hiralin/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.12/jcl-over-slf4j-2.0.12.jar:/Users/hiralin/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/hiralin/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/hiralin/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/hiralin/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/hiralin/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/hiralin/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/hiralin/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/hiralin/.m2/repository/de/siegmar/fastcsv/3.1.0/fastcsv-3.1.0.jar:/Users/hiralin/.m2/repository/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/Users/hiralin/.m2/repository/io/github/classgraph/classgraph/4.8.170/classgraph-4.8.170.jar:/Users/hiralin/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/hiralin/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/hiralin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/hiralin/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/hiralin/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/hiralin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/hiralin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/hiralin/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Tokyo"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="JP"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/hiralin/DemoTest/target/surefire/surefirebooter-20241016213756817_3.jar /Users/hiralin/DemoTest/target/surefire 2024-10-16T21-37-56_783-jvmRun1 surefire-20241016213756817_1tmp surefire_0-20241016213756817_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/hiralin/DemoTest/target/test-classes:/Users/hiralin/DemoTest/target/classes:/Users/hiralin/.m2/repository/io/karatelabs/karate-junit5/1.5.0/karate-junit5-1.5.0.jar:/Users/hiralin/.m2/repository/io/karatelabs/karate-core/1.5.0/karate-core-1.5.0.jar:/Users/hiralin/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/hiralin/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/hiralin/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/hiralin/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/hiralin/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/hiralin/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/hiralin/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/hiralin/.m2/repository/com/linecorp/armeria/armeria/1.29.2/armeria-1.29.2.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/hiralin/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/hiralin/.m2/repository/io/micrometer/micrometer-core/1.13.0/micrometer-core-1.13.0.jar:/Users/hiralin/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/Users/hiralin/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/Users/hiralin/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.1/HdrHistogram-2.2.1.jar:/Users/hiralin/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport/4.1.110.Final/netty-transport-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-common/4.1.110.Final/netty-common-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-buffer/4.1.110.Final/netty-buffer-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver/4.1.110.Final/netty-resolver-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-haproxy/4.1.110.Final/netty-codec-haproxy-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec/4.1.110.Final/netty-codec-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-http2/4.1.110.Final/netty-codec-http2-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-handler/4.1.110.Final/netty-handler-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-http/4.1.110.Final/netty-codec-http-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver-dns/4.1.110.Final/netty-resolver-dns-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-dns/4.1.110.Final/netty-codec-dns-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar:/Users/hiralin/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/hiralin/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/hiralin/.m2/repository/io/netty/netty-handler-proxy/4.1.110.Final/netty-handler-proxy-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-codec-socks/4.1.110.Final/netty-codec-socks-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.110.Final/netty-transport-classes-epoll-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.110.Final/netty-transport-classes-kqueue-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.110.Final/netty-resolver-dns-classes-macos-4.1.110.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-classes/2.0.65.Final/netty-tcnative-classes-2.0.65.Final.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar:/Users/hiralin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar:/Users/hiralin/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar:/Users/hiralin/.m2/repository/com/aayushatharva/brotli4j/service/1.16.0/service-1.16.0.jar:/Users/hiralin/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.16.0/native-osx-aarch64-1.16.0.jar:/Users/hiralin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/hiralin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/hiralin/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/hiralin/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/hiralin/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/hiralin/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.12/jcl-over-slf4j-2.0.12.jar:/Users/hiralin/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/hiralin/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/hiralin/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/hiralin/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/hiralin/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/hiralin/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/hiralin/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/hiralin/.m2/repository/de/siegmar/fastcsv/3.1.0/fastcsv-3.1.0.jar:/Users/hiralin/.m2/repository/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/Users/hiralin/.m2/repository/io/github/classgraph/classgraph/4.8.170/classgraph-4.8.170.jar:/Users/hiralin/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/hiralin/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/hiralin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/hiralin/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/hiralin/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/hiralin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/hiralin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/hiralin/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/hiralin"/>
+    <property name="user.language" value="ja"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/hiralin/DemoTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/hiralin/DemoTest/target/surefire/surefirebooter-20241016213756817_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="user.name" value="hiralin"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/hiralin/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/2l/7cbhjfh167g6r466zqqn9swc0000gn/T/"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="/Users/hiralin/DemoTest"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/hiralin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.2+9-70"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="3.08">
+    <failure message="status code was: 201, expected: 400, response time in milliseconds: 466, url: https://todolist-sample.com/register, response: &#10;{&#10;  &quot;message&quot;: &quot;User registered successfully&quot;&#10;}&#10;&#10;classpath:examples/sample/demotest.feature:107 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 201, expected: 400, response time in milliseconds: 466, url: https://todolist-sample.com/register, response: 
+{
+  "message": "User registered successfully"
+}
+
+classpath:examples/sample/demotest.feature:107 ==> expected: <0> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+]]></failure>
+    <system-out><![CDATA[21:37:57.485 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:37:57.881 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:37:57.919 [pool-2-thread-1] INFO  com.intuit.karate - [print] user_20241016213757 
+21:37:57.920 [pool-2-thread-1] INFO  com.intuit.karate - [print] testmail_20241016213757@example.com 
+21:37:57.921 [pool-2-thread-1] INFO  com.intuit.karate - [print] test12345 
+21:37:58.052 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://todolist-sample.com/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: todolist-sample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user_20241016213757","email":"testmail_20241016213757@example.com","password":"test12345"}
+
+21:37:58.667 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 605
+1 < 201
+1 < Date: Wed, 16 Oct 2024 12:36:49 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 48
+1 < Connection: keep-alive
+1 < Server: Werkzeug/3.0.4 Python/3.9.20
+1 < Vary: Cookie
+1 < Set-Cookie: session=eyJsb2dnZWRfaW4iOnRydWUsInJlZ2lzdGVyZWQiOnRydWUsInVzZXJfaWQiOjd9.Zw-zYQ.5Cyx5IsWi1VjbOYpBzgVpOiBjfA; HttpOnly; Path=/
+{
+  "message": "User registered successfully"
+}
+
+
+21:37:58.672 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "message": "User registered successfully"
+}
+ 
+21:37:58.680 [pool-2-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'body' with new value: {
+"identifier": #(email),
+"password": #(password)
+}
+21:37:58.684 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://todolist-sample.com/login
+2 > Cookie: session=eyJsb2dnZWRfaW4iOnRydWUsInJlZ2lzdGVyZWQiOnRydWUsInVzZXJfaWQiOjd9.Zw-zYQ.5Cyx5IsWi1VjbOYpBzgVpOiBjfA
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 75
+2 > Host: todolist-sample.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+2 > Accept-Encoding: gzip,deflate
+{"identifier":"testmail_20241016213757@example.com","password":"test12345"}
+
+21:37:59.168 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 484
+2 < 200
+2 < Date: Wed, 16 Oct 2024 12:36:49 GMT
+2 < Content-Type: application/json
+2 < Content-Length: 47
+2 < Connection: keep-alive
+2 < Server: Werkzeug/3.0.4 Python/3.9.20
+2 < Vary: Cookie
+2 < Set-Cookie: session=eyJsb2dnZWRfaW4iOnRydWUsInJlZ2lzdGVyZWQiOnRydWUsInVzZXJfaWQiOjd9.Zw-zYQ.5Cyx5IsWi1VjbOYpBzgVpOiBjfA; HttpOnly; Path=/
+{
+  "message": "User logged in successfully"
+}
+
+
+21:37:59.172 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "message": "User logged in successfully"
+}
+ 
+21:37:59.175 [pool-2-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'body' with new value: {
+  "task": "報告書提出",
+  "priority": 1,
+  "due_date": "2024-10-26",
+  "tags": "tag01"
+}
+21:37:59.179 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://todolist-sample.com/todos
+3 > Cookie: session=eyJsb2dnZWRfaW4iOnRydWUsInJlZ2lzdGVyZWQiOnRydWUsInVzZXJfaWQiOjd9.Zw-zYQ.5Cyx5IsWi1VjbOYpBzgVpOiBjfA
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 78
+3 > Host: todolist-sample.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+3 > Accept-Encoding: gzip,deflate
+{"task":"報告書提出","priority":1,"due_date":"2024-10-26","tags":"tag01"}
+
+21:37:59.234 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 54
+3 < 201
+3 < Date: Wed, 16 Oct 2024 12:36:49 GMT
+3 < Content-Type: application/json
+3 < Content-Length: 174
+3 < Connection: keep-alive
+3 < Server: Werkzeug/3.0.4 Python/3.9.20
+3 < Vary: Cookie
+{
+  "created_at": "2024-10-16T21:36:49.670574+09:00",
+  "due_date": "2024-10-26",
+  "id": 5,
+  "priority": 1,
+  "tags": "tag01",
+  "task": "\u5831\u544a\u66f8\u63d0\u51fa"
+}
+
+
+21:37:59.235 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "created_at": "2024-10-16T21:36:49.670574+09:00",
+  "due_date": "2024-10-26",
+  "id": 5,
+  "priority": 1,
+  "tags": "tag01",
+  "task": "報告書提出"
+}
+ 
+21:37:59.237 [pool-2-thread-1] INFO  com.intuit.karate - [print] true 
+21:37:59.238 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+4 > POST https://todolist-sample.com/logout
+4 > Cookie: session=eyJsb2dnZWRfaW4iOnRydWUsInJlZ2lzdGVyZWQiOnRydWUsInVzZXJfaWQiOjd9.Zw-zYQ.5Cyx5IsWi1VjbOYpBzgVpOiBjfA
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 78
+4 > Host: todolist-sample.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+4 > Accept-Encoding: gzip,deflate
+{"task":"報告書提出","priority":1,"due_date":"2024-10-26","tags":"tag01"}
+
+21:37:59.278 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 40
+4 < 200
+4 < Date: Wed, 16 Oct 2024 12:36:49 GMT
+4 < Content-Type: application/json
+4 < Content-Length: 72
+4 < Connection: keep-alive
+4 < Server: Werkzeug/3.0.4 Python/3.9.20
+4 < Vary: Cookie
+4 < Set-Cookie: session=eyJyZWdpc3RlcmVkIjp0cnVlfQ.Zw-zYQ.A3YWgzh0Z0U_mwzDXFKdmyaOQBY; HttpOnly; Path=/
+{
+  "message": "User logged out successfully",
+  "redirect": "/login"
+}
+
+
+21:37:59.279 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "message": "User logged out successfully",
+  "redirect": "/login"
+}
+ 
+21:37:59.284 [pool-2-thread-1] INFO  com.intuit.karate - [print] user_20241016213759 
+21:37:59.284 [pool-2-thread-1] INFO  com.intuit.karate - [print] testmail_20241016213759@example 
+21:37:59.285 [pool-2-thread-1] INFO  com.intuit.karate - [print] test12345 
+21:37:59.285 [pool-2-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'body' with new value: {
+ "username": #(username2),
+ "email": #(email2),
+ "password": #(password2)
+}
+21:37:59.287 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+5 > POST https://todolist-sample.com/register
+5 > Cookie: session=eyJyZWdpc3RlcmVkIjp0cnVlfQ.Zw-zYQ.A3YWgzh0Z0U_mwzDXFKdmyaOQBY
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 99
+5 > Host: todolist-sample.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+5 > Accept-Encoding: gzip,deflate
+{"username":"user_20241016213759","email":"testmail_20241016213759@example","password":"test12345"}
+
+21:37:59.754 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 466
+5 < 201
+5 < Date: Wed, 16 Oct 2024 12:36:50 GMT
+5 < Content-Type: application/json
+5 < Content-Length: 48
+5 < Connection: keep-alive
+5 < Server: Werkzeug/3.0.4 Python/3.9.20
+5 < Vary: Cookie
+5 < Set-Cookie: session=eyJsb2dnZWRfaW4iOnRydWUsInJlZ2lzdGVyZWQiOnRydWUsInVzZXJfaWQiOjh9.Zw-zYg.QcIsmlXIteWmsMCAFtcLszjsDw4; HttpOnly; Path=/
+{
+  "message": "User registered successfully"
+}
+
+
+21:37:59.769 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/sample/demotest.feature:107
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 466, url: https://todolist-sample.com/register, response: 
+{
+  "message": "User registered successfully"
+}
+
+classpath:examples/sample/demotest.feature:107
+---------------------------------------------------------
+feature: classpath:examples/sample/demotest.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 1.8709
+---------------------------------------------------------
+
+21:38:00.082 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/sample/demotest.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   2.88 | threads:    5 | thread time: 1.87 
+features:     1 | skipped:    0 | efficiency: 0.13
+scenarios:    1 | passed:     0 | failed: 1
+======================================================
+>>> failed features:
+status code was: 201, expected: 400, response time in milliseconds: 466, url: https://todolist-sample.com/register, response: 
+{
+  "message": "User registered successfully"
+}
+
+classpath:examples/sample/demotest.feature:107
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///Users/hiralin/DemoTest/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
