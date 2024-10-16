@@ -1,5 +1,5 @@
 Feature: KarateDemo
-Scenario: login~insert
+Scenario: login_insert_logout
   # Register（POST）
 
     * def getTime =
